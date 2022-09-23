@@ -3,12 +3,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid rgb(92, 43, 43);
+  padding: 10px;
+  border-radius: 10px;
 }
 
-h1,
-h3,
-h4 {
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header h1,
+.header h2,
+.header h3 {
+  margin: 0;
 }
 
 form {
@@ -26,5 +40,30 @@ form {
   gap: 5px;
 }
 
+form label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input {
+  border-radius: 8px;
+  padding: 1px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: solid rgb(15, 74, 102);
+}
+
 .confirm-button {
+  background-color: rgb(28, 107, 138);
+  border: none;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bolder;
+  border-radius: 8px;
+}
+
+.confirm-button:hover {
+  background-color: rgb(67, 160, 160);
+  cursor: pointer;
 }

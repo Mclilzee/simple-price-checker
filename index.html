@@ -8,13 +8,13 @@
     <title>Simple Price Checker</title>
   </head>
   <body>
-    <div class="instructions">
-      <h1>Simple price checker!</h1>
-      <h3>This converter works with grams or liters.</h3>
-      <h4>
+    <div class="header">
+      <h1 class="title">Simple price checker!</h1>
+      <h2 class="description">This converter works with grams or mililiters.</h2>
+      <h3 class="instructions">
         Provide the first field with product weight / volume, and the second
         field with the price on the pricetag.
-      </h4>
+      </h3>
     </div>
     <form class="input-fields">
       <div class="weight-input">
@@ -25,7 +25,7 @@
         <label class="label">Price</label>
         <input type="number" min="1" max="999999999999" />
       </div>
-      <button class="confirm" type="confirm" >Convert</button>
+      <button class="confirm-button" type="submit">Convert</button>
     </form>
     <h1 class="result">The price in kg / Liter : 2342.2</h1>
   </body>
