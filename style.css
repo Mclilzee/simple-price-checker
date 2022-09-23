@@ -5,6 +5,26 @@ body {
   align-items: center;
 }
 
-h1, h3, h4 {
+h1,
+h3,
+h4 {
   text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.weight-input,
+.price-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.confirm-button {
 }
