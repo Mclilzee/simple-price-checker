@@ -1,11 +1,14 @@
 const form = document.querySelector("form");
-const result = document.querySelector(".result");
+const resultInKg = document.querySelector(".result.kg");
+const resultInHundretGrams = document.querySelector(".result.g")
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const weight = event.target[0].value;
   const price = event.target[1].value;
-  
+  const pricePerGram = price / weight;
+  resultInKg.textContent = (pricePerGram * 1000).toFixed(2);
+  resultInHundretGrams.textContent = (pricePerGram * 100).toFixed(2);
+
   event.target[1].blur();
-  result.textContent = (price / weight) * 1000;
 })
