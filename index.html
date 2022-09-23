@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
     <title>Simple Price Checker</title>
   </head>
   <body>
     <div class="header">
       <h1 class="title">Simple price checker!</h1>
-      <h2 class="description">This converter works with grams or mililiters.</h2>
+      <h2 class="description">
+        This converter works with grams or mililiters.
+      </h2>
       <h3 class="instructions">
         Provide the first field with product weight / volume, and the second
         field with the price on the pricetag.
@@ -22,11 +22,11 @@
     <form class="input-fields">
       <div class="weight-input">
         <label class="lable">Weight / Volume</label>
-        <input type="number" min="1" max="999999999999" />
+        <input type="number" step="any" min="0.01" max="999999999999" />
       </div>
       <div class="price-input">
         <label class="label">Price</label>
-        <input type="number" min="1" max="999999999999" />
+        <input type="number" step="any" min="0.01" max="999999999999" />
       </div>
       <button class="confirm-button" type="submit">Convert</button>
     </form>
