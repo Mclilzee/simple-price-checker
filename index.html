@@ -22,11 +22,11 @@
     <form class="input-fields">
       <div class="weight-input">
         <label class="lable">Weight / Volume</label>
-        <input type="number" step="any" min="0.01" max="999999999999" />
+        <input required type="number" step="any" min="0.001" max="999999999999" />
       </div>
       <div class="price-input">
         <label class="label">Price</label>
-        <input type="number" step="any" min="0.01" max="999999999999" />
+        <input required type="number" step="0.01" min="0.01" max="999999999999" />
       </div>
       <button class="confirm-button" type="submit">Convert</button>
     </form>
@@ -34,6 +34,8 @@
       <h2 class="result-box">The price in kg / Liter</h2>
       <h1 class="result kg">0</h1>
       <h2 class="result-box">The price in 100g / 100 mililiters</h2>
+      <h1 class="result hundret-g">0</h1>
+      <h2 class="result-box">The price in g / mililiters</h2>
       <h1 class="result g">0</h1>
     </div>
   </body>
