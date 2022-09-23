@@ -1,0 +1,1 @@
+A simple price checker for shopping to my good friend that can't do math.
